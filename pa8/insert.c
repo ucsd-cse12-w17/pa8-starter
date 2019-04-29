@@ -17,7 +17,7 @@
 // memory error that results from trying to do the above.
 void insert(int* elts, int size, int index, int toInsert) {
 	int i;
-  for(i = size - 1; i >= index; i -= 1) {
+  for(i = size - 2; i >= index; i -= 1) {
     elts[i + 1] = elts[i];
   }
   elts[index] = toInsert;
